@@ -6,6 +6,8 @@ An AI-powered platform that helps developers identify skill gaps, generate perso
 
 ## Submission Info
 
+## App Live Link :https://skillbridge-ai-gamma.vercel.app
+
 ## Demo Video Link : https://www.loom.com/share/046c32c89fab4a18a86abc84110f90b3
 
 | Field | Details |

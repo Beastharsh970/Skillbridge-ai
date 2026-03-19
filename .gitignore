@@ -4,4 +4,4 @@ dist/
 *.log
 uploads/*
 !uploads/.gitkeep
-.DS_Store
+
