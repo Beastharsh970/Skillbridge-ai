@@ -1,0 +1,204 @@
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900&display=swap');
+
+/* =============================================
+   Design Tokens (CSS Custom Properties)
+   ============================================= */
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3%;
+
+  --primary: 24 100% 42%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 5%;
+
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 35%;
+
+  --accent: 0 0% 96%;
+  --accent-foreground: 0 0% 3%;
+
+  --destructive: 0 84% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 0 0% 85%;
+  --input: 0 0% 85%;
+  --ring: 24 100% 42%;
+
+  --radius: 0.75rem;
+
+  --gradient-primary: linear-gradient(135deg, hsl(24 100% 42%), hsl(30 100% 48%));
+  --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.08);
+  --shadow-elevated: 0 10px 40px -10px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  color-scheme: light;
+}
+
+.dark {
+  --background: 0 0% 4%;
+  --foreground: 0 0% 98%;
+
+  --card: 0 0% 6%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 0 0% 6%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 24 100% 55%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 0 0% 12%;
+  --muted-foreground: 0 0% 60%;
+
+  --accent: 0 0% 12%;
+  --accent-foreground: 0 0% 98%;
+
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 0 0% 14%;
+  --input: 0 0% 14%;
+  --ring: 24 100% 55%;
+
+  --gradient-subtle: linear-gradient(180deg, hsl(0 0% 6%), hsl(0 0% 4%));
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+  --shadow-elevated: 0 10px 40px -10px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+
+  color-scheme: dark;
+}
+
+/* =============================================
+   Keyframes
+   ============================================= */
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* =============================================
+   Animation Utilities
+   ============================================= */
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* =============================================
+   Staggered Children Animations
+   ============================================= */
+
+.stagger-children > * {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 100ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 200ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 300ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 400ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 500ms; }
+
+/* =============================================
+   Grid Background & Gradient Overlay
+   ============================================= */
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.gradient-overlay {
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(var(--primary) / 0.15), transparent);
+}
+
+/* =============================================
+   Interactive Utilities
+   ============================================= */
+
+.link-hover {
+  position: relative;
+  display: inline-block;
+}
+.link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: hsl(var(--foreground));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.link-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
+}
+
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: linear-gradient(135deg, hsl(var(--primary) / 0.3), hsl(var(--primary) / 0.1));
+}
+.btn-glow:hover::before {
+  opacity: 1;
+}

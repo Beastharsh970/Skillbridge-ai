@@ -1,0 +1,27 @@
+{
+  "name": "@uraj/ui-theme",
+  "version": "1.0.0",
+  "description": "Reusable UI theme — CSS variables, Tailwind preset, React theme provider, and utility classes.",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "tailwind-preset.ts",
+    "theme.css",
+    "ThemeProvider.tsx",
+    "ThemeToggle.tsx",
+    "utils.ts"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "tailwindcss": ">=3.4",
+    "clsx": ">=2",
+    "tailwind-merge": ">=2",
+    "lucide-react": ">=0.300"
+  },
+  "peerDependenciesMeta": {
+    "lucide-react": {
+      "optional": true
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+Name,Email,Current_Role,Years_Experience,Core_Skills,Target_Role,Target_Skills,GitHub_URL
+Alex Chen,alex.dev@example.com,Junior Web Developer,1,"HTML, CSS, JavaScript, React","Frontend Engineer","TypeScript, TailwindCSS, Next.js, Redux",https://github.com/alexchendev
+Sarah Jenkins,sjenkins.data@example.com,Data Analyst,3,"Python, SQL, Excel, Tableau","Data Scientist","Machine Learning, PyTorch, Pandas, Scikit-learn",https://github.com/sjenkinsdata
+David Kim,dkim.sys@example.com,System Administrator,4,"Linux, Bash, Active Directory, Networking","Cloud Engineer","AWS, Terraform, Kubernetes, Docker",https://github.com/davidksys
+Elena Rodriguez,elena.ui@example.com,UX Designer,2,"Figma, Wireframing, User Research","UI/UX Developer","CSS, React, TailwindCSS, Frontend Architecture",https://github.com/elenarod
+Marcus Johnson,marcusj.qa@example.com,Manual QA Tester,3,"Test Cases, JIRA, Postman (Basic)","QA Automation Engineer","Selenium, Cypress, JavaScript, CI/CD",https://github.com/marcusjqa
+Priya Patel,priya.patel@example.com,Backend Developer,2,"Node.js, Express, MongoDB, REST APIs","Full Stack Developer","React, Docker, GraphQL, AWS",https://github.com/priyapateldev
+Michael O'Connor,m.oconnor@example.com,IT Support Specialist,5,"Troubleshooting, Helpdesk, Windows Server","DevOps Engineer","Linux, Python, Docker, Jenkins",https://github.com/moconnortech
+Rachel Wu,rachel.wu@example.com,Marketing Associate,2,"SEO, Content Strategy, Google Analytics","Product Manager","Agile, Jira, Data Analysis, SQL",
+James Taylor,james.taylor@example.com,Student,0,"C++, Java, Data Structures","Software Engineer","Git, Databases, Web Development, APIs",https://github.com/jamest99
+Olivia Smith,olivia.smith@example.com,Graphic Designer,4,"Adobe CC, Illustration, Branding","Frontend Developer","HTML, CSS, JavaScript, React",https://github.com/oliviasmithdesigns
