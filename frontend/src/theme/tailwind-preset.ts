@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
-const preset: Partial<Config> = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const preset: any = {
   darkMode: ["class"],
   theme: {
     container: {
