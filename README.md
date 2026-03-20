@@ -10,6 +10,14 @@ An AI-powered platform that helps developers identify skill gaps, generate perso
 
 ## Demo Video Link : https://www.loom.com/share/046c32c89fab4a18a86abc84110f90b3
 
+## 🔐 Demo Account Credentials
+
+You can use the following test account to explore the application:
+**Email:** harsh@gmail.com
+**Password:** harsh123
+
+> ⚠️ This is a shared demo account. Data may be reset periodically.
+
 | Field | Details |
 | --- | --- |
 | **Candidate Name** | Harsh Raj |
