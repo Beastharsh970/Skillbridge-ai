@@ -13,10 +13,13 @@ An AI-powered platform that helps developers identify skill gaps, generate perso
 ## 🔐 Demo Account Credentials
 
 You can use the following test account to explore the application:
-**Email:** harsh@gmail.com
+
+**Email:** harsh@gmail.com 
 **Password:** harsh123
 
 > ⚠️ This is a shared demo account. Data may be reset periodically.
+
+
 
 | Field | Details |
 | --- | --- |
